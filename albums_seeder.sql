@@ -1,7 +1,6 @@
 USE codeup_test_db;
-show tables;
 
-INSERT INTO albums (artist, record_name, release_year, sales_in_millions, genre)
+INSERT INTO albums (artist, record_name, release_date, sales, genre)
 VALUES
 ('Michael Jackson', 'Thriller', 1982, 47.3, 'Pop, rock, R&B'),
 ('Eagles', 'Their Greatest Hits (1971–1975)', 1976, 41.2, 'Pop'),
@@ -18,6 +17,8 @@ VALUES
 ('Alanis Morisette', 'Jagged Little Pill', 1995, 24.4, 'Alternative rock'),
 ('Celine Dion', 'Falling into You', 1996, 20.2, 'Pop, soft rock'),
 ('The Beatles', 'Sgt. Pepper''s Lonely Hearts Club Band', 1967, 18.2, 'Rock'),
-('Justin Bieber', 'Dirty Dancing', 1987, 17.9, 'Pop, rock, R&B');
+('Justin Bieber', 'Dirty Dancing', 1987, 17.9, 'Pop, rock, R&B'),
+('Nirvana', 'Nevermind', 1991, 16.7, 'Grunge, alternative rock');
+
 
 SELECT * FROM albums;
