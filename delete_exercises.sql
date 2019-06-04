@@ -23,4 +23,6 @@ WHERE artist = 'Whitney Houston';
 DELETE FROM albums
 WHERE artist = 'Whitney Houston';
 
+SELECT * FROM albums;
+
 
