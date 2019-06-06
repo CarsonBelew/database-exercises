@@ -18,7 +18,7 @@ JOIN dept_manager
 ON dept_manager.emp_no = employees.emp_no
 JOIN departments
 ON departments.dept_no = dept_manager.dept_no
-WHERE dept_manager.to_date > curdate() and gender = 'F'
+WHERE dept_manager.to_date > curdate() and gender ='F'
 ORDER BY departments.dept_name;
 
 # Find the current titles of employees currently working in the Customer Service department
