@@ -36,6 +36,15 @@ join employees e on dm.emp_no = e.emp_no
 where dm.to_date > curdate() and gender = 'F'
 order by dept_name asc;
 
+select dept_name from departments
+where dept_no in (
+  select dept_no from dept_manager
+  where to_date > curdate() and emp_no in (
+    select emp_no from employees
+    where gender='F'
+  )
+);
+
 # Find the first and last name of the employee with the highest salary
 select first_name, last_name
 from employees
