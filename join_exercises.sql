@@ -48,3 +48,8 @@ join employees as em on em.emp_no = dm.emp_no
 join employees as e on e.emp_no = de.emp_no
 where dm.to_date > curdate() and de.to_date > curdate()
 order by d.dept_name asc;
+
+
+show create table employees;
+show create table salaries;
+
